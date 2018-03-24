@@ -1,19 +1,19 @@
 
-# bitcore-wallet-service
+# litecore-wallet-service
 
 [![NPM Package](https://img.shields.io/npm/v/bitcore-wallet-service.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-wallet-service)
 [![Build Status](https://img.shields.io/travis/bitpay/bitcore-wallet-service.svg?branch=master&style=flat-square)](https://travis-ci.org/bitpay/bitcore-wallet-service)
 [![Coverage Status](https://coveralls.io/repos/bitpay/bitcore-wallet-service/badge.svg?branch=master)](https://coveralls.io/r/bitpay/bitcore-wallet-service?branch=master)
 
-A Multisig HD Bitcore Wallet Service.
+A Multisig HD Litecore Wallet Service.
 
 # Description
 
-Bitcore Wallet Service facilitates multisig HD wallets creation and operation through a (hopefully) simple and intuitive REST API.
+Litecore Wallet Service facilitates multisig HD wallets creation and operation through a (hopefully) simple and intuitive REST API.
 
 BWS can usually be installed within minutes and accommodates all the needed infrastructure for peers in a multisig wallet to communicate and operate – with minimum server trust.
   
-See [Bitcore-wallet-client] (https://github.com/bitpay/bitcore-wallet-client) for the *official* client library that communicates to BWS and verifies its response. Also check [Bitcore-wallet] (https://github.com/bitpay/bitcore-wallet) for a simple CLI wallet implementation that relays on BWS.
+See [Litecore-wallet-client] (https://github.com/bitpay/bitcore-wallet-client) for the *official* client library that communicates to BWS and verifies its response. Also check [Bitcore-wallet] (https://github.com/bitpay/bitcore-wallet) for a simple CLI wallet implementation that relays on BWS.
 
 BWS is been used in production enviroments for [Copay Wallet](https://copay.io), [Bitpay App wallet](https://bitpay.com/wallet) and others.  
 

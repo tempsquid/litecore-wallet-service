@@ -43,7 +43,8 @@ var Service = function(options) {
 
 util.inherits(Service, EventEmitter);
 
-Service.dependencies = ['insight-api'];
+// XXXX
+Service.dependencies = ['insight-lite-api'];
 
 /**
  * This method will read `key` and `cert` files from disk based on `httpsOptions` and
@@ -78,10 +79,11 @@ Service.prototype._readHttpsOptions = function() {
 Service.prototype._getConfiguration = function() {
   var self = this;
 
+// XXXX
   var providerOptions = {
     provider: 'insight',
     url: (self.node.https ? 'https://' : 'http://') + 'localhost:' + self.node.port,
-    apiPrefix: '/insight-api'
+    apiPrefix: '/insight-lite-api'
   };
 
   // A bitcore-node is either livenet or testnet, so we'll pass

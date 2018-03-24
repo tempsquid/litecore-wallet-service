@@ -1,7 +1,7 @@
 var config = {
   basePath: '/bws/api',
   disableLogs: false,
-  port: 3232,
+  port: 4232,
 
   // Uncomment to make BWS a forking server
   // cluster: true,
@@ -40,7 +40,7 @@ var config = {
   blockchainExplorerOpts: {
     livenet: {
       provider: 'insight',
-      url: 'https://insight.bitpay.com:443',
+      url: 'https://explorer.ltc.dlc.net:443',
     },
     testnet: {
       provider: 'insight',
@@ -53,7 +53,7 @@ var config = {
   pushNotificationsOpts: {
     templatePath: './lib/templates',
     defaultLanguage: 'en',
-    defaultUnit: 'btc',
+    defaultUnit: 'ltc',
     subjectPrefix: '',
     pushServerUrl: 'https://fcm.googleapis.com/fcm',
     authorizationKey: '',

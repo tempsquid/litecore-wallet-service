@@ -2,11 +2,11 @@
 
 var should = require('chai').should();
 var proxyquire = require('proxyquire');
-var bitcore = require('bitcore-lib');
+var bitcore = require('litecore-lib');
 var sinon = require('sinon');
-var Service = require('../bitcorenode');
+var Service = require('../litecorenode');
 
-describe('Bitcore Node Service', function() {
+describe('Litecore Node Service', function() {
   describe('#constructor', function() {
     it('https settings from node', function() {
       var node = {
