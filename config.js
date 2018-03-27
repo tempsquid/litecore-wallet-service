@@ -1,7 +1,7 @@
 var config = {
   basePath: '/bws/api',
   disableLogs: false,
-  port: 4232,
+  port: 5232,
 
   // Uncomment to make BWS a forking server
   // cluster: true,
@@ -21,7 +21,7 @@ var config = {
 
   storageOpts: {
     mongoDb: {
-      uri: 'mongodb://localhost:27017/bws_lite',
+      uri: 'mongodb://localhost:27017/bws_zcash',
     },
   },
   lockOpts: {
@@ -40,11 +40,11 @@ var config = {
   blockchainExplorerOpts: {
     livenet: {
       provider: 'insight',
-      url: 'https://explorer.ltc.dlc.net:443',
+      url: 'https://explorer.zcash.dlc.net:443',
     },
     testnet: {
       provider: 'insight',
-      url: 'https://test-insight.bitpay.com:443',
+      url: 'https://explorer.testnet.z.cash:443',
       // url: 'http://localhost:3001',
       // Multiple servers (in priority order)
       // url: ['http://a.b.c', 'https://test-insight.bitpay.com:443'],
@@ -53,7 +53,7 @@ var config = {
   pushNotificationsOpts: {
     templatePath: './lib/templates',
     defaultLanguage: 'en',
-    defaultUnit: 'ltc',
+    defaultUnit: 'zec',
     subjectPrefix: '',
     pushServerUrl: 'https://fcm.googleapis.com/fcm',
     authorizationKey: '',
